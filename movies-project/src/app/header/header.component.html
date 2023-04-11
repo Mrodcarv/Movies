@@ -1,0 +1,9 @@
+<nav class="nav">
+        <ul class="links">
+            <li routerLinkActive="activate"><a routerLink="login">Login</a></li>
+            <li routerLinkActive="activate"><a routerLink="">Home</a></li>
+            <li routerLinkActive="activate"><a routerLink="movies">Movies</a></li>
+            <li routerLinkActive="activate"><a routerLink="cart">Cart</a></li>
+            <button *ngIf="isLogged">Logout</button>
+        </ul>
+</nav>

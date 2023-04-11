@@ -1,0 +1,38 @@
+<div class="aForm"><button (click)="showForm()">Add to List</button></div>
+    <br>
+    <div class="add-f" *ngIf="enableForm">
+        <form [formGroup]="addForm" (ngSubmit)="onAddMovie()">
+            <div class="title">
+            <input type="text" placeholder="Enter Title"
+            formControlName="title">
+            </div><br>
+            <div class="year">
+                <select  formControlName="year" >
+                    <option value= null disable selected hidden>Release Year</option>
+                    <option *ngFor="let year of years" [value]="year">{{year}}</option>
+                  </select>
+                
+            </div><br>
+            <div class="genre">
+                <input type="text"  placeholder="Enter Genre"
+                formControlName="genre">
+            </div><br>
+            <div class="img">
+                <input type="text"  placeholder="Enter Poster URL"
+                formControlName="imagePath" 
+                #imagePath>
+            </div><br>
+                <div class="pv">
+                    <img [src]="imagePath.value" class="img-responsive">
+                </div>
+            <div class="syn">
+                <textarea type="text"  placeholder="Synopsis" id="desc" cols="100" rows="10"
+                formControlName="desc"></textarea>
+            </div><br>
+            <div class="m-add">
+                <button type="submit">Add Movie</button>
+            </div>
+        </form>
+    </div>
+    
+<br>

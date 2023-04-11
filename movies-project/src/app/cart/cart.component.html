@@ -1,0 +1,28 @@
+<div class="container">
+<div class="movieDetail" *ngFor="let mov of movies; let i=index">
+    <div class="main">
+        <div class="wrap-image">
+          <span class="pull-left">
+              <img 
+              src="{{mov.imagePath}}" 
+              alt="{{ mov.title}}" 
+              class="img-responsive">
+          </span>
+        </div>
+        <div class="wrap-info">
+          <div class="display-flex"><h3 class="title">Title:</h3> {{mov.title}}
+          </div>
+          <div class="wrap-middle">
+            <div class="display-flex"><h3 class="year">Release Year:</h3> {{mov.year}}</div>
+            <div class="display-flex"><h3 class="year">Genre:</h3> {{mov.genre}}</div>
+          </div>
+          <h3>Description:</h3> <div class="description-text">{{mov.desc}}
+          </div>
+          <div class="wrap-button">
+            <button class="mDelete" (click)="onRemove(i)">Delete</button>
+            <button class="mTicket">Get Ticket</button>
+        </div>
+        </div>
+      </div> 
+</div>
+</div>

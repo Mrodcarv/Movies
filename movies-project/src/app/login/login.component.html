@@ -1,0 +1,23 @@
+<div class="row">
+    <form [formGroup]="logForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <input 
+            type="text" 
+            placeholder="Insert e-mail"
+            formControlName="email"
+            >
+        </div><br>
+        <div class="form-group">
+            <input type="password"
+            placeholder="Insert Password"
+            formControlName="password"
+            minlength="6"
+            >
+        </div><br>
+        <div class="butt">
+            <button class="sign" (click)="onSignUp()">SignUp</button>
+            <button class="log" [disabled]="!logForm.valid"
+            (click)="onLogIn()">Login</button>
+        </div>
+    </form>
+</div>

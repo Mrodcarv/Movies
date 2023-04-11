@@ -1,0 +1,47 @@
+.main {
+    display: flex;
+    gap:18px;
+    background-color: #F5F5F5;
+    border: 30px;
+  }
+  .display-flex{
+    display: flex;
+    align-items: center;
+  }
+  .wrap-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+  }
+  
+  .wrap-middle{
+    display:flex;
+    gap: 100px;
+  }
+  .img-responsive{
+    max-height: 350px;
+  }
+  .wrap-info{
+     display: flex;
+     flex-direction: column;
+     width:100%
+  }
+  .description-text{
+    max-height: 140px;
+    overflow-y:auto;
+  }
+  
+.add{
+    height: 40px;
+    width: 100px;
+    background-color: #a70000;
+    color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 10%;
+    
+}
+
+.container{
+    max-width:800px;
+    margin: auto;
+  }

@@ -1,0 +1,42 @@
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.form-group{
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: none;
+    appearance: none;
+    background: #f2f2f2;
+    width: 250px;
+    padding: 10px;
+}
+
+button{
+    cursor: pointer;
+    color:#f2f2f2;
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+ }
+
+ .sign{
+    margin-right: 15px;
+    background-color: #1e0260;
+ }
+
+ .log{
+    background-color: #a70000;
+ }
+
+ .butt{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+ }
